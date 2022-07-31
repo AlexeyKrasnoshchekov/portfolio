@@ -1,19 +1,20 @@
 // @use 'variables';
 
 .navbar {
-  outline: 2px solid yellow;
+//   outline: 2px solid yellow;
   position: fixed;
   top: 0;
   z-index: 2;
 	height: 50px;
+	font-size: 15px !important;
 }
 
 .bgTransparent {
   background-color:rgba(128, 0, 0, 0);
+  font-size: 15px !important;
 }
 .borderNone {
   border: none;
-  color: №fff;
 }
 
 .main {

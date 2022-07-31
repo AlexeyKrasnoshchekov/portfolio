@@ -11,14 +11,16 @@ const LeftMenu = () => {
 	const [current, setCurrent] = useState(2);
 	const [menuItems, setMenuItems] = useState([]);
 	const { menu } = useContext(context);
-	const initialRender = useRef(true);
+	// const initialRender = useRef(true);
 
 	useEffect(() => {
-		if (initialRender.current) {
-			initialRender.current = false;
-			return;
-		}
+		// if (initialRender.current) {
+		// 	initialRender.current = false;
+		// 	return;
+		// }
 		setMenuItems([]);
+
+		console.log("menu", menu);
 
 		menu &&
 			menu.map((item) => {
@@ -49,9 +51,9 @@ const LeftMenu = () => {
 			});
 	}, [menu]);
 
-	useEffect(() => {
-		menuItems.length !== 0 && console.log("menuItems", menuItems);
-	}, [menuItems]);
+	// useEffect(() => {
+	// 	menuItems.length !== 0 && console.log("menuItems", menuItems);
+	// }, [menuItems]);
 
 	const onClick = (e) => {
 		console.log("click ", e);
@@ -64,7 +66,7 @@ const LeftMenu = () => {
 				width: "100%",
 				display: "flex",
 				justifyContent: "center",
-				outline: "2px solid blue",
+				// outline: "2px solid blue",
 			}}
 		>
 			{menuItems.length !== 0 && (
@@ -73,6 +75,11 @@ const LeftMenu = () => {
 					selectedKeys={[current]}
 					mode="horizontal"
 					items={menuItems}
+					style={{
+						width: "100%",
+						display: "flex",
+						justifyContent: "center",
+					}}
 					className={[styles.bgTransparent, styles.borderNone]}
 				/>
 			)}
