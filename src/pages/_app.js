@@ -1,5 +1,6 @@
 import React from "react";
 import State from "../utils/context";
+import "../styles/globals.scss";
 
 require("src/styles/index.less");
 
