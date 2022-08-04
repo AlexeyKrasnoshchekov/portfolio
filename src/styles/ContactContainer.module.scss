@@ -1,0 +1,45 @@
+.cta {
+	display: block;
+	background-image: url("../assets/banner.png") !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	// background-color: #311e25;
+
+
+}
+.right {
+	padding-left: 2rem;
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.image {
+	clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+	width:100%;
+	height:20rem;
+
+}
+.listItem {
+	line-height: 1.8rem;
+
+}
+.list {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+
+
+}
