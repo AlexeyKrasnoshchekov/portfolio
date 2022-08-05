@@ -2,14 +2,16 @@
 	background-color: #311e25;
 	padding-left: 3rem;
 	padding-right: 3rem;
-	padding-top: 5rem;
-	padding-bottom: 2rem;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	text-indent: 2rem !important;
 }
 .aboutTitle {
 	color: white !important;
 	text-align: center;
 	font-weight: 300 !important;
-	margin-bottom: 3rem !important;
+	margin-bottom: 2rem !important;
+	font-size: 2rem !important;
 }
 
 .left {
@@ -27,26 +29,74 @@
 	width: 20rem;
 	height: 20rem;
 }
+.text {
+	font-size: 1.2rem !important;
+}
 
 @media (max-width: 576px) {
 	.aboutTitle {
-		color: white !important;
-		text-align: center;
-		font-weight: 300 !important;
 		margin-bottom: 1rem !important;
 		font-size: 1.3rem !important;
 	}
 	.about {
-		background-color: #311e25;
 		padding-left: 3rem;
 		padding-right: 3rem;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
+
 	}
 	.lottie {
 		width: 13rem;
 		height: 13rem;
 		margin-bottom: 1rem !important;
 	}
+	.text {
+		font-size: 1rem !important;
+		text-align: center;
+	}
 
+  }
+
+  @media (max-width: 768px) and (min-width: 576px)  {
+
+	.aboutTitle {
+		margin-bottom: 1rem !important;
+		font-size: 1.7rem !important;
+	}
+	.text {
+		font-size: 1.1rem !important;
+		text-align: center;
+	}
+  }
+
+  @media (max-width: 992px) and (min-width: 768px)  {
+	.aboutTitle {
+		margin-bottom: 1rem !important;
+		font-size: 1.7rem !important;
+	}
+	.text {
+		font-size: 1.1rem !important;
+		text-align: center;
+	}
+  }
+
+  @media only screen and (max-width: 1600px) and (min-width: 1200px)  {
+
+	.aboutTitle {
+		width: 70%;
+		margin: 0 auto;
+		height: 10%
+	}
+	.text {
+		font-size: 1.3rem !important;
+
+	}
+
+	.row{
+		height: 90%
+	}
+	.lottie {
+		width: 25rem;
+		height: 25rem;
+	}
   }

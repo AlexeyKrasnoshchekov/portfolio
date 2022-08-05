@@ -30,6 +30,16 @@ body {
 .ant-anchor-ink {
 	display: none;
 }
+.ant-menu-horizontal {
+	border: none !important;
+}
+
+
+@media (max-width: 576px) {
+	.ant-menu-item {
+		margin-bottom: 2rem !important;
+	}
+  }
 
 
 a {

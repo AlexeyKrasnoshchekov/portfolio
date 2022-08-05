@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const MyMenu = () => {
 	const [menuItems, setMenuItems] = useState([]);
-	const { menu } = useContext(context);
+	const { menu, windowDimention } = useContext(context);
 
 	useEffect(() => {
 		setMenuItems([]);
@@ -23,7 +23,7 @@ const MyMenu = () => {
 								spy={true}
 								smooth={true}
 								duration={500}
-								className={styles.borderNone}
+								className={styles.menuLink}
 							>
 								{item.label}
 							</Link>
@@ -36,16 +36,15 @@ const MyMenu = () => {
 
 	return (
 		<div className={styles.menuContainer}>
-			{menuItems.length !== 0 && (
+			{menuItems.length !== 0 && windowDimention.winWidth > 576 && (
 				<Menu
 					mode="horizontal"
 					items={menuItems}
-					className={[
-						styles.bgTransparent,
-						styles.borderNone,
-						styles.menu,
-					]}
+					className={styles.bgTransparent}
 				/>
+			)}
+			{menuItems.length !== 0 && windowDimention.winWidth < 576 && (
+				<Menu items={menuItems} className={styles.drawerMenu} />
 			)}
 		</div>
 	);

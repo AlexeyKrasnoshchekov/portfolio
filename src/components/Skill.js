@@ -9,8 +9,7 @@ function Skill({ skill }) {
 			{skill && (
 				<>
 					<img
-						width={75}
-						height={75}
+						className={styles.skill}
 						src={skill[Object.keys(skill)[0]].default.src}
 						alt="логотип технологии web разработки"
 					/>

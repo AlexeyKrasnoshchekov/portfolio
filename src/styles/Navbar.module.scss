@@ -1,9 +1,6 @@
 
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 	padding-left: 3.2rem;
 	padding-right: 3.2rem;
@@ -11,9 +8,11 @@
 	z-index: 2;
 	top: 0;
 	height: 5rem;
+	display: flex;
+	align-items: center;
 }
-.menuContainer, .menu {
-	width: 100%;
+.menuContainer, {
+
 	display: flex;
 	justify-content: center;
 }
@@ -22,8 +21,8 @@
   background-color:rgba(49, 30, 37, 1);
   font-size: 15px !important;
 }
-.borderNone {
-  border: none;
+.menuLink {
+  font-size: 1.2rem;
 }
 .activeLink {
 	color: white !important;
@@ -34,6 +33,23 @@
 		display: flex;
 		justify-content: center;
 	}
+	.drawerMenu {
+		background-color: #b5f5ec;
+	}
+	.menuContainer {
+		display: flex;
+		justify-content: flex-start;
+		// font-size: 5rem;
+	}
+	.menuLink {
+		font-size: 2rem;
+		font-weight: 500;
+	  }
 
   }
+  @media (max-width: 768px) and (min-width: 576px)  {
 
+	.menuLink {
+		font-size: 1rem;
+	  }
+  }

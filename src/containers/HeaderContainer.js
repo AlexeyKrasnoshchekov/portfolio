@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Typography, Button, Layout, Col, Row } from "antd";
 const { Title, Text } = Typography;
 const { Header } = Layout;
@@ -8,8 +8,11 @@ import styles from "../styles/HeaderContainer.module.scss";
 import btnStyles from "../styles/Button.module.less";
 import Typewriter from "typewriter-effect";
 import myImg from "../assets/my_img.webp";
+import { context } from "src/utils/context";
 
 const HeaderContainer = () => {
+	const { windowDimention } = useContext(context);
+
 	return (
 		<Header
 			style={{ height: "100vh", paddingTop: "calc(1rem + 50px)" }}
@@ -17,7 +20,17 @@ const HeaderContainer = () => {
 			id="header"
 		>
 			<Row className={styles.headerRow}>
-				<Col span={12} className={styles.left}>
+				<Col
+					lg={{ span: 12 }}
+					md={{ span: 12 }}
+					sm={{ span: 24 }}
+					xs={{ span: 24 }}
+					className={styles.left}
+				>
+					{windowDimention.winWidth < 768 && (
+						<img className={styles.image} src={myImg.src} />
+					)}
+
 					<Title className={styles.headerTitle}>
 						<Typewriter
 							options={{
@@ -53,13 +66,15 @@ const HeaderContainer = () => {
 						</Link>
 					</Button>
 				</Col>
-				<Col span={12} className={styles.right}>
-					<img
-						className={styles.image}
-						// height={"100%"}
-						src={myImg.src}
-					/>
-				</Col>
+				{windowDimention.winWidth > 768 && (
+					<Col span={12} className={styles.right}>
+						<img
+							className={styles.image}
+							// height={"100%"}
+							src={myImg.src}
+						/>
+					</Col>
+				)}
 			</Row>
 		</Header>
 	);

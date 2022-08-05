@@ -34,7 +34,7 @@ const SkillsContainer = () => {
 	}, []);
 
 	return (
-		<div style={{ height: "100vh" }} className={styles.skills} id="skills">
+		<div className={styles.skills} id="skills">
 			<Title level={2} className={styles.mainTitle}>
 				Мой стэк технологий
 			</Title>
@@ -42,7 +42,14 @@ const SkillsContainer = () => {
 				{images.length !== 0 &&
 					images.map((skill, index) => {
 						return (
-							<Col key={index} span={6} className={styles.col}>
+							<Col
+								key={index}
+								span={6}
+								lg={{ span: 6 }}
+								md={{ span: 6 }}
+								xs={{ span: 5 }}
+								className={styles.col}
+							>
 								<Skill skill={skill} />
 							</Col>
 						);

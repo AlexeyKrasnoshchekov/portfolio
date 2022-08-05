@@ -14,13 +14,24 @@ const reducer = (state, action) => {
 				...state,
 				isDrawerVisible: action.payload,
 			};
+		case "SET_WINDOW_SIZE":
+			return {
+				...state,
+				windowDimention: {
+					...state.windowDimention,
+					winWidth: action.payload.winWidth,
+					winHeight: action.payload.winHeight,
+				},
+			};
 	}
 };
 
 const State = (props) => {
 	const initialState = {
-		// token: '',
-		// tokenIsSet: false,
+		windowDimention: {
+			winWidth: 0,
+			winHeight: 0,
+		},
 		isModalVisible: false,
 		isDrawerVisible: false,
 		menu: [
@@ -48,15 +59,22 @@ const State = (props) => {
 		dispatch({ type: "SET_IS_MODAL_VISIBLE", payload: bool });
 	const toggleDrawer = (bool) =>
 		dispatch({ type: "SET_IS_DRAWER_VISIBLE", payload: bool });
+	const setWindowSize = (obj) =>
+		dispatch({ type: "SET_WINDOW_SIZE", payload: obj });
 
 	return (
 		<context.Provider
 			value={{
+				winWidth: state.winWidth,
+				winHeight: state.winHeight,
+				windowDimention: state.windowDimention,
+
 				menu: state.menu,
 				isModalVisible: state.isModalVisible,
 				isDrawerVisible: state.isDrawerVisible,
 				toggleModal,
 				toggleDrawer,
+				setWindowSize,
 				// tokenIsSet: state.tokenIsSet,
 				// playlists: state.playlists,
 				// playlist: state.playlist,

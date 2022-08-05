@@ -3,7 +3,7 @@ import { Row, Col, Button, message, Form, Input, Modal } from "antd";
 const { TextArea } = Input;
 import { UserOutlined, MailOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
-import styles from "../styles/Modal.module.less";
+import styles from "../styles/Contact.module.less";
 import btnStyles from "../styles/Button.module.less";
 import { context } from "src/utils/context";
 

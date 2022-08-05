@@ -6,20 +6,21 @@
 	padding-bottom: 1rem;
 }
 .project {
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 .mainTitle {
 	margin-bottom: 3rem !important;
+	font-size: 2rem !important;
 }
 .title {
 	color: white !important;
 	text-align: center;
 	font-weight: 300 !important;
 	margin-bottom: 3rem !important;
+
 }
 
 .left,.right {
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -39,3 +40,72 @@
 .stackText {
 	color: white !important;
 }
+
+@media (max-width: 576px) {
+	.right,.left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding:0;
+	}
+	.descr {
+		text-align: center;
+		margin-top: 2rem;
+		font-size: 1.1rem;
+	}
+	.mainTitle {
+		margin-bottom: 2rem !important;
+		text-align: center;
+		font-size: 1.7rem !important;
+	}
+	.title {
+		margin-bottom: 2rem !important;
+		font-size: 1.3rem !important;
+		margin: 0 auto;
+	}
+  }
+  @media (max-width: 768px) and (min-width: 576px)  {
+	.right,.left{
+		align-items: center;
+		padding:0;
+	}
+	.mainTitle {
+		margin-bottom: 2rem !important;
+		text-align: center;
+		font-size: 1.7rem !important;
+	}
+	.title {
+		margin-bottom: 2rem !important;
+		font-size: 1.4rem !important;
+		margin: 0 auto;
+	}
+	.descr {
+		font-size: 1.1rem;
+		text-align: center;
+		margin-top: 2rem;
+	}
+  }
+
+  @media (max-width: 992px) and (min-width: 768px)  {
+	.descr {
+		font-size: 1.1rem;
+		margin-top: 2rem;
+		text-align: center;
+	}
+	.right,.left{
+		align-items: center;
+		padding:0;
+	}
+	.title {
+		margin: 0 auto;
+	}
+  }
+
+  @media only screen and (max-width: 1600px) and (min-width: 1200px)  {
+	.project {
+		margin-bottom: 6rem;
+	}
+	.descr {
+		font-size: 1.2rem;
+	}
+  }
