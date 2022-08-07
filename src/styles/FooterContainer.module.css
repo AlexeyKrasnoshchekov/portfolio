@@ -1,0 +1,38 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #311e25;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  color: white !important;
+  text-align: center;
+  font-weight: 300 !important;
+}
+
+.title2 {
+  text-align: center;
+  font-weight: 300 !important;
+  margin-bottom: 4rem !important;
+  margin-top: 0 !important;
+}
+
+.text {
+  text-align: center;
+  font-weight: 300 !important;
+  color: white !important;
+}
+/*# sourceMappingURL=FooterContainer.module.css.map */

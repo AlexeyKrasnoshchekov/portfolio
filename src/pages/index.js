@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
 
-export default function Home() {
+const Home = () => {
 	const [menuShow, showMenu] = useState(false);
 
 	return (
@@ -20,4 +20,6 @@ export default function Home() {
 			<HomeContainer />
 		</>
 	);
-}
+};
+
+export default Home;

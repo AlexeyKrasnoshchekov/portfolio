@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { Row, Col, Button, message, Form, Input, Modal } from "antd";
+import React, { useContext } from "react";
+import { Button, message, Form, Input, Modal } from "antd";
 const { TextArea } = Input;
 import { UserOutlined, MailOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
@@ -7,7 +7,7 @@ import styles from "../styles/Contact.module.less";
 import btnStyles from "../styles/Button.module.less";
 import { context } from "src/utils/context";
 
-function Contact() {
+const Contact = () => {
 	const formName = `contact`;
 	const [form] = Form.useForm();
 	const { isModalVisible, toggleModal } = useContext(context);
@@ -140,6 +140,6 @@ function Contact() {
 			</Form>
 		</Modal>
 	);
-}
+};
 
 export default Contact;

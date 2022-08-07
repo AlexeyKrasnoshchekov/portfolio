@@ -26,21 +26,25 @@
 
 .col {
 	text-align: center;
-	margin-bottom: 2rem;
+	// margin-bottom: 1rem;
 }
 .title {
 	font-weight: 300 !important;
 	margin-top: 0.5rem;
 }
 .skill {
-	width: 5rem;
-	height: 5rem;
+	padding-left: 1rem;
 }
 
 @media (max-width: 576px) {
 	.skills {
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+	.skill {
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
+		margin-top: 1rem;
 	}
 
 	.mainTitle {
@@ -55,10 +59,7 @@
 		text-align: center;
 		margin-bottom: 1.4rem;
 	}
-	.skill {
-		width: 3.3rem;
-		height: 3.3rem;
-	}
+
   }
   @media (max-width: 768px) and (min-width: 576px)  {
 
@@ -69,25 +70,56 @@
 		text-align: center;
 		font-size: 1.2rem !important;
 	}
+	.skill {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		margin-top: 2rem;
+	}
+	.skills {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
 }
 
 @media (max-width: 992px) and (min-width: 768px)  {
 	.mainTitle {
 		font-size: 1.7rem !important;
 	}
+	.skill {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		margin-top: 2rem;
+	}
+	.skills {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+  }
+@media (max-width: 1200px) and (min-width: 992px)  {
+	.skill {
+		padding-left: 4rem;
+		padding-right: 4rem;
+		margin-top: 2rem;
+	}
+	.skills {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
   }
 
   @media only screen and (max-width: 1600px) and (min-width: 1200px)  {
 	.skills {
 		padding-top: 4rem;
+		padding-bottom: 4rem;
 	}
 	.skill {
-		width: 6rem;
-		height: 6rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		margin-top: 2rem;
 	}
 
 	.mainTitle {
-		margin-bottom: 5rem !important;
+		margin-bottom: 4rem !important;
 		font-size: 2rem !important;
 	}
 

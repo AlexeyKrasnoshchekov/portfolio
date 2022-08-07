@@ -1,0 +1,116 @@
+.cta {
+  background-image: url("../assets/banner.png") !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.right {
+  padding-left: 2rem;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image {
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.text {
+  font-size: 1.5rem !important;
+}
+
+.listItem {
+  line-height: 2rem;
+  font-size: 1.3rem !important;
+}
+
+.list {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem !important;
+}
+
+@media (max-width: 576px) {
+  .cta {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .image {
+    display: none;
+  }
+  .right {
+    padding-left: 2rem;
+    background-image: url("../assets/ctaImage.webp") !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .title {
+    font-size: 1.7rem !important;
+  }
+  .listItem {
+    line-height: 1.7rem;
+    font-size: 1rem !important;
+  }
+  .text {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .title {
+    font-size: 1.7rem !important;
+  }
+  .image {
+    display: none;
+  }
+  .right {
+    padding-left: 2rem;
+    background-image: url("../assets/ctaImage.webp") !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .headerTitle {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+  .cta {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .image {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=cta.module.css.map */

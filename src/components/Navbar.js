@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import MyMenu from "./Menu";
 import { Drawer, Button, Col, Row } from "antd";
 import { CloseSquareOutlined, MenuOutlined } from "@ant-design/icons";
@@ -8,6 +8,7 @@ import logo from "../assets/logo.png";
 
 import { Link } from "react-scroll";
 import { context } from "src/utils/context";
+import Image from "next/image";
 
 const Navbar = () => {
 	const { toggleModal, toggleDrawer, isDrawerVisible, windowDimention } =
@@ -27,7 +28,7 @@ const Navbar = () => {
 		<Row className={[styles.bgTransparent, styles.navbar]}>
 			<Col span={4}>
 				<Link to={"header"} spy={true} smooth={true} duration={500}>
-					<img
+					<Image
 						width={50}
 						height={50}
 						src={logo.src}
