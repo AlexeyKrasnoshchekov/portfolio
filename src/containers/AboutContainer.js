@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { Space, Typography, Button, Layout, Col, Row } from "antd";
-const { Title, Text, Link } = Typography;
+import { Space, Typography, Col, Row } from "antd";
+const { Title } = Typography;
 import styles from "../styles/AboutContainer.module.less";
 import { context } from "src/utils/context";
 
@@ -30,13 +30,13 @@ const AboutContainer = () => {
 					md={{ span: 12 }}
 				>
 					<Space className={styles.left} size="middle">
-						<Text className={styles.text}>
+						<p className={styles.text}>
 							Proin laoreet elementum ligula, ac tincidunt lorem
 							accumsan nec. Fusce eget urna ante. Donec massa
 							velit, varius a accumsan ac, tempor iaculis massa.
 							Sed placerat justo sed libero varius vulputate. Ut a
 							mi tempus massa malesuada fermentum.
-						</Text>
+						</p>
 					</Space>
 				</Col>
 				{windowDimention.winWidth > 768 && (

@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { Typography, Button, List, Col, Row } from "antd";
-const { Title, Text } = Typography;
+const { Title } = Typography;
 import styles from "../styles/cta.module.scss";
 import btnStyles from "../styles/Button.module.less";
 import ctaImage from "../assets/ctaImage.webp";
 import { context } from "src/utils/context";
+import Image from "next/image";
 
-function ContactContainer() {
+const ContactContainer = () => {
 	const { toggleModal } = useContext(context);
 
 	const showModal = () => {
@@ -26,10 +27,10 @@ function ContactContainer() {
 				<Title className={styles.title} level={3}>
 					In addition to providing
 				</Title>
-				<Text>
+				<p className={styles.text}>
 					nstead of simply putting a sign up CTA to promote her
 					newsletter
-				</Text>
+				</p>
 				<List
 					className={styles.list}
 					dataSource={data}
@@ -47,11 +48,17 @@ function ContactContainer() {
 				</Button>
 			</Col>
 			<Col span={12} className={styles.right}>
-				<img className={styles.image} src={ctaImage.src} />
+				<Image
+					width="500"
+					height="500"
+					src={ctaImage.src}
+					className={styles.image}
+					alt="call to action image"
+				/>
 			</Col>
 		</Row>
 		// </div>
 	);
-}
+};
 
 export default ContactContainer;

@@ -15,7 +15,7 @@ const HeaderContainer = () => {
 
 	return (
 		<Header
-			style={{ height: "100vh", paddingTop: "calc(1rem + 50px)" }}
+			// style={{ height: "100vh", paddingTop: "calc(1rem + 50px)" }}
 			className={styles.header}
 			id="header"
 		>

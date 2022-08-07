@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Space, Typography, Button, Layout, Col, Row, Image } from "antd";
-const { Title, Text, Link } = Typography;
+import { Typography, Col, Row } from "antd";
+const { Title } = Typography;
 import styles from "../styles/SkillsContainer.module.less";
 import Skill from "src/components/Skill";
 

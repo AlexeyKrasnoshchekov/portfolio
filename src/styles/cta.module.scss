@@ -24,12 +24,18 @@
 }
 .image {
 	clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-	width:100%;
-	height:20rem;
+	// width:100%;
+	// height:100%;
+
+}
+.text {
+	// line-height: 2rem;
+	font-size: 1.5rem !important;
 
 }
 .listItem {
-	line-height: 1.8rem;
+	line-height: 2rem;
+	font-size: 1.3rem !important;
 
 }
 .list {
@@ -40,6 +46,12 @@
 	font-size: 2rem !important;
 }
 @media (max-width: 576px) {
+	.cta {
+
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
 	.image {
 		display: none;
 	}
@@ -53,6 +65,17 @@
 	}
 	.title {
 		font-size: 1.7rem !important;
+	}
+
+	.listItem {
+		line-height: 1.7rem;
+		font-size: 1rem !important;
+
+	}
+	.text {
+		font-size: 1.1rem !important;
+		// text-align: center;
+
 	}
   }
 
@@ -73,6 +96,13 @@
 		clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 	}
 }
+
+@media (max-width: 1200px) and (min-width: 992px)  {
+	.headerTitle {
+		font-size: 3.5rem !important;
+	}
+
+  }
 
   @media only screen and (max-width: 1600px) and (min-width: 1200px)  {
 	.cta {

@@ -1,12 +1,15 @@
 .header {
     display: block;
     background-image: url("../assets/banner.png") !important;
-
+	height: 100vh;
     width: 100%;
     background-position: center center;
-
+	padding-top: calc(1rem + 50px);
     background-size: cover;
     background-repeat: no-repeat;
+
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 .headerRow {
@@ -54,10 +57,18 @@
 
 @media (max-width: 576px) {
 	.headerTitle {
-		font-size: 2.5rem !important;
-	}
-	.headerTitle2 {
 		font-size: 2rem !important;
+		text-align: center;
+	}
+
+	.header {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.headerTitle2 {
+		font-size: 1.5rem !important;
+		text-align: center;
 	}
 	.left {
 		height: 100%;
@@ -68,7 +79,7 @@
 	}
 	.image {
 		clip-path: circle(48% at 51% 50%);
-		width: 35%;
+		width: 10rem;
 		margin-bottom: 1rem;
 	}
   }

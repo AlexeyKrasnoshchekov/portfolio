@@ -1,6 +1,5 @@
 {
 	"extends": [
-		"airbnb",
 		"next/core-web-vitals"
 	],
 	"plugins": [],
@@ -20,7 +19,7 @@
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
 		"react/require-default-props": 0,
-		"react/prop-types": "error",
+		"react/prop-types": "off",
 		"react/no-namespace": "off",
 		"react/prefer-exact-props": "off",
 		"react/no-arrow-function-lifecycle": "off",

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { Space, Typography, Image, Button, Layout, Col, Row } from "antd";
-const { Title, Text, Link } = Typography;
+import { Typography, Image, Button, Col, Row } from "antd";
+const { Title, Text } = Typography;
 import styles from "../styles/ProjectsContainer.module.less";
 import btnStyles from "../styles/Button.module.less";
 import { context } from "src/utils/context";
 
-function Project({ proj }) {
+const Project = ({ proj }) => {
 	const { windowDimention } = useContext(context);
 
 	return (
@@ -20,6 +20,7 @@ function Project({ proj }) {
 							<Image
 								width="100%"
 								src={proj.img[[Object.keys(proj.img)[0]]].src}
+								alt="project image"
 							/>
 						</Col>
 					)}
@@ -35,14 +36,13 @@ function Project({ proj }) {
 							<Image
 								width="100%"
 								src={proj.img[[Object.keys(proj.img)[0]]].src}
+								alt="project image"
 							/>
 						)}
 						<Text className={styles.descr}>{proj.descr}</Text>
-						<div className={styles.stack}>
-							<Text className={styles.stackText}>
-								{`Stack: ${proj.stack.join(" ")}`}
-							</Text>
-						</div>
+						<p className={styles.stackText}>
+							{`Stack: ${proj.stack.join(" ")}`}
+						</p>
 						<div>
 							<Button
 								type="primary"
@@ -50,7 +50,11 @@ function Project({ proj }) {
 								className={btnStyles.btnNavbar}
 								style={{ marginRight: "1rem" }}
 							>
-								<a href={proj.githubLink} target="_blank">
+								<a
+									href={proj.githubLink}
+									target="_blank"
+									rel="noreferrer"
+								>
 									GitHub
 								</a>
 							</Button>
@@ -60,7 +64,11 @@ function Project({ proj }) {
 									size="large"
 									className={btnStyles.btnNavbar}
 								>
-									<a href={proj.liveLink} target="_blank">
+									<a
+										href={proj.liveLink}
+										target="_blank"
+										rel="noreferrer"
+									>
 										Live
 									</a>
 								</Button>
@@ -71,6 +79,6 @@ function Project({ proj }) {
 			</Col>
 		</Row>
 	);
-}
+};
 
 export default Project;
