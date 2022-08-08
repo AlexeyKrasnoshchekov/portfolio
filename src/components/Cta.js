@@ -3,9 +3,7 @@ import { Typography, Button, List, Col, Row } from "antd";
 const { Title } = Typography;
 import styles from "../styles/cta.module.scss";
 import btnStyles from "../styles/Button.module.less";
-import ctaImage from "../assets/ctaImage.webp";
 import { context } from "src/utils/context";
-import Image from "next/image";
 
 const ContactContainer = () => {
 	const { toggleModal } = useContext(context);
@@ -15,9 +13,9 @@ const ContactContainer = () => {
 	};
 
 	const data = [
-		`Обсудим что вам необходимо`,
-		"Предложу реализацию вашей идеи",
-		"Сделаю все в лучшем виде, как для себя",
+		`- Обсудим что вам необходимо`,
+		"- Предложу реализацию вашей идеи",
+		"- Сделаю все в лучшем виде, как для себя",
 	];
 
 	return (
@@ -44,15 +42,7 @@ const ContactContainer = () => {
 					Хочу сайт
 				</Button>
 			</Col>
-			<Col span={12} className={styles.right}>
-				<Image
-					width="500"
-					height="500"
-					src={ctaImage.src}
-					className={styles.image}
-					alt="call to action image"
-				/>
-			</Col>
+			<Col span={12} className={styles.right}></Col>
 		</Row>
 		// </div>
 	);
