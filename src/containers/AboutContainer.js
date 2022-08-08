@@ -11,8 +11,7 @@ const AboutContainer = () => {
 	return (
 		<div id="about" className={styles.about}>
 			<Title level={2} className={styles.aboutTitle}>
-				I’m a Creative director based on New York, who loves clean,
-				simple & unique design. I also enjoy crafting
+				Немного о себе
 			</Title>
 			{windowDimention.winWidth < 768 && (
 				<Player
@@ -31,11 +30,11 @@ const AboutContainer = () => {
 				>
 					<Space className={styles.left} size="middle">
 						<p className={styles.text}>
-							Proin laoreet elementum ligula, ac tincidunt lorem
-							accumsan nec. Fusce eget urna ante. Donec massa
-							velit, varius a accumsan ac, tempor iaculis massa.
-							Sed placerat justo sed libero varius vulputate. Ut a
-							mi tempus massa malesuada fermentum.
+							Создаю сайты и веб-приложения. Считаю это своим
+							призванием, поэтому постоянно изучаю и применяю
+							новые технологии разработки. Стремлюсь создавать
+							продукт отвечающий высоким стандартам качества и
+							способный восхитить конечного пользователя.
 						</p>
 					</Space>
 				</Col>

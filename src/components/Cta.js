@@ -15,9 +15,9 @@ const ContactContainer = () => {
 	};
 
 	const data = [
-		`Racing car sprays burning fuel into crowd.`,
-		"Japanese princess to wed commoner.",
-		"Australian walks 100km after outback crash.",
+		`Обсудим что вам необходимо`,
+		"Предложу реализацию вашей идеи",
+		"Сделаю все в лучшем виде, как для себя",
 	];
 
 	return (
@@ -25,12 +25,9 @@ const ContactContainer = () => {
 		<Row className={styles.cta}>
 			<Col span={12} className={styles.left}>
 				<Title className={styles.title} level={3}>
-					In addition to providing
+					Вам нужен сайт?
 				</Title>
-				<p className={styles.text}>
-					nstead of simply putting a sign up CTA to promote her
-					newsletter
-				</p>
+				<p className={styles.text}>Предлагаю услугу по его созданию</p>
 				<List
 					className={styles.list}
 					dataSource={data}
