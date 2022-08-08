@@ -123,7 +123,7 @@ You do not need to worry about .error {} colliding with any other `.less` or
 Then, create `components/Button.js`, importing and using the above LESS file:
 
 ```js
-import classes from './Button.module.less'
+import classes from './button.module.less'
 
 export function Button() {
   return (

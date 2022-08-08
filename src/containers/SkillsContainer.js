@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Typography, Col, Row } from "antd";
 const { Title } = Typography;
-import styles from "../styles/SkillsContainer.module.less";
+import styles from "../styles/skillsContainer.module.less";
 import Skill from "src/components/Skill";
 
 function importAll(r) {

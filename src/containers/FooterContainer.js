@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../styles/FooterContainer.module.scss";
-import { Space, Typography, Image, Button, Layout, Col, Row } from "antd";
-const { Title, Text, Link } = Typography;
-function FooterContainer() {
+import styles from "../styles/footerContainer.module.less";
+import { Typography } from "antd";
+const { Title, Text } = Typography;
+const FooterContainer = () => {
 	return (
 		<div className={styles.footer}>
 			<Title level={3} className={styles.title}>
@@ -16,6 +16,6 @@ function FooterContainer() {
 			</Text>
 		</div>
 	);
-}
+};
 
 export default FooterContainer;

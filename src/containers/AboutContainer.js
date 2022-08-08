@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Space, Typography, Col, Row } from "antd";
 const { Title } = Typography;
-import styles from "../styles/AboutContainer.module.less";
+import styles from "../styles/aboutContainer.module.less";
 import { context } from "src/utils/context";
 
 const AboutContainer = () => {

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Typography, Button, List, Col, Row } from "antd";
 const { Title } = Typography;
 import styles from "../styles/cta.module.scss";
-import btnStyles from "../styles/Button.module.less";
+import btnStyles from "../styles/button.module.less";
 import { context } from "src/utils/context";
 
 const ContactContainer = () => {

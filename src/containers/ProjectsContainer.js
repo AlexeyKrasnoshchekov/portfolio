@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../styles/ProjectsContainer.module.less";
-import { Space, Typography, Button, Layout, Col, Row } from "antd";
-const { Title, Text, Link } = Typography;
+import styles from "../styles/projectsContainer.module.less";
+import { Typography } from "antd";
+const { Title } = Typography;
 // import { context } from "../utils/context";
 import ProjectImgLeft from "src/components/ProjectImgLeft";
 import ProjectImgRight from "src/components/ProjectImgRight";

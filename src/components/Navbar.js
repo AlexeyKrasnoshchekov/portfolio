@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import MyMenu from "./Menu";
 import { Drawer, Button, Col, Row } from "antd";
 import { CloseSquareOutlined, MenuOutlined } from "@ant-design/icons";
-import styles from "../styles/Navbar.module.scss";
-import btnStyles from "../styles/Button.module.less";
+import styles from "../styles/navbar.module.less";
+import btnStyles from "../styles/button.module.less";
 import logo from "../assets/logo.png";
 
 import { Link } from "react-scroll";
