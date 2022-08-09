@@ -4,8 +4,8 @@ const { Title } = Typography;
 const { Header } = Layout;
 import { Link } from "react-scroll";
 
-import styles from "../styles/headerContainer.module.scss";
-import btnStyles from "../styles/button.module.less";
+import styles from "../styles/HeaderContainer.module.scss";
+import btnStyles from "../styles/Button.module.less";
 import Typewriter from "typewriter-effect";
 import myImg from "../assets/my_img.webp";
 import { context } from "src/utils/context";

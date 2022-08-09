@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Menu } from "antd";
-import styles from "../styles/navbar.module.less";
+import styles from "../styles/Navbar.module.less";
 import { context } from "../utils/context";
 import { Link } from "react-scroll";
 

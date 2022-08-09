@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/footerContainer.module.less";
+import styles from "../styles/FooterContainer.module.less";
 import { Typography } from "antd";
 const { Title, Text } = Typography;
 const FooterContainer = () => {

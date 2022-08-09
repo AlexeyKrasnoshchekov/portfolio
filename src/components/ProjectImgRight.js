@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Typography, Image, Button, Col, Row } from "antd";
 const { Title, Text } = Typography;
-import styles from "../styles/projectsContainer.module.less";
-import btnStyles from "../styles/button.module.less";
+import styles from "../styles/ProjectsContainer.module.less";
+import btnStyles from "../styles/Button.module.less";
 import { context } from "src/utils/context";
 
 const Project = ({ proj }) => {

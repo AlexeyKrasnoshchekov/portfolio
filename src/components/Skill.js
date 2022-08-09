@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "antd";
 const { Title } = Typography;
-import styles from "../styles/skillsContainer.module.less";
+import styles from "../styles/SkillsContainer.module.less";
 import Image from "next/image";
 
 const Skill = ({ skill }) => {

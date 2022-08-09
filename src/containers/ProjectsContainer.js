@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "../styles/projectsContainer.module.less";
+import styles from "../styles/ProjectsContainer.module.less";
 import { Typography } from "antd";
 const { Title } = Typography;
-// import { context } from "../utils/context";
 import ProjectImgLeft from "src/components/ProjectImgLeft";
 import ProjectImgRight from "src/components/ProjectImgRight";
 import { data } from "../utils/projectsData";
